@@ -70,10 +70,10 @@ class _ShopPageState extends State<ShopPage> {
     ],
     ),
     ),
-    const SizedBox(height: 10),
-    Expanded(
+     const SizedBox(height:10),
+     Expanded(
     child: ListView.builder(
-    itemCount: 3,
+    itemCount: value.getShoeList().length,
     scrollDirection: Axis.horizontal,
     itemBuilder: (context,index) {
       Shoe shoe = value.getShoeList()[index];
