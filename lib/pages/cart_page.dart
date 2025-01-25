@@ -17,11 +17,12 @@ class _CartPageState extends State<CartPage> {
         builder: (context,value,child)=>Padding(
           padding: const EdgeInsets.symmetric(horizontal: 25.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text('My Cart',
             style: TextStyle(fontWeight: FontWeight.bold,fontSize: 24),
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 25),
               Expanded(child: ListView.builder(
                 itemCount: value.getUserCart().length,
                 itemBuilder: (context,index) {
